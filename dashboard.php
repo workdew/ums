@@ -7,9 +7,10 @@ include("index.php");
 <head>
     <meta charset="utf-8">
     <title>Dashboard - Client area</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css" />
 </head>
 <body>
+    
     <div class="form">
         <p>Hey, <?php echo $_SESSION['name']; ?>!</p>
         <p>You are now user dashboard page.</p>
