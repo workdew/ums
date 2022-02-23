@@ -1,10 +1,5 @@
 <?php
-    $host = "localhost";
-    $user = "root";
-    $pass = "";
-    $name = "test";
-
-    // Enter your host name, database username, password, and database name.
+   // Enter your host name, database username, password, and database name.
     // If you have not set database password on localhost then set empty.
     $con = mysqli_connect("localhost","root","","test");
     // Check connection

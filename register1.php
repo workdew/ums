@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8"/>
     <title>Registration</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style1.css"/>
 </head>
 <body>
-    
+
 <?php
     require('data.php');
     // When form submitted, insert values into the database.
@@ -49,6 +49,5 @@
         <input type="submit" name="submit" value="Register" class="login-button">
         <p class="link"><a href="login.php">Click to Login</a></p>
     </form>
-
 </body>
 </html>

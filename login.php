@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Login</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style1.css"/>
 </head>
 <body>
 <?php
@@ -38,6 +38,7 @@
         <h1 class="login-title">Login</h1>
         <input type="text" class="login-input" name="email" placeholder="name" autofocus="true"/>
         <input type="password" class="login-input" name="password" placeholder="Password"/>
+        <p class="link"><a href="newpass.php">Forgot password</a></p> 
         <input type="submit" value="Login" name="submit" class="login-button"/>
         <p class="link"><a href="register1.php">New Registration</a></p>
   </form>
