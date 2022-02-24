@@ -1,9 +1,9 @@
 <?php
 require_once('data.php');
-require('login.php');
+
 
 if(isset($_POST) & !empty($_POST)){
-	$email = mysqli_real_escape_string($conn, $_POST['email']);
+	$email = mysqli_real_escape_string($con, $_POST['email']);
 	$sql = "SELECT * FROM `users` WHERE email = '$email'";
 	$res = mysqli_query($con, $sql);
 	$count = mysqli_num_rows($res);
@@ -32,15 +32,17 @@ if(isset($_POST) & !empty($_POST)){
 <html>
 <head>
 	<title>Forgot Password</title>
+  
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="style1.css">
 </head>
 <body>
-<div class="container">
+<div class="container.forgot">
       <?php if(isset($smsg)){ ?><div class="alert alert-success" role="alert"> <?php echo $smsg; ?> </div><?php } ?>
       <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
         <form id="register-form" role="form" autocomplete="off" class="form" method="post">    
-		  <div class="form-group">
+        <h2 class="Reset"> Reset Password</h2>
+        <div class="form-group">
 			<div class="input-group">
 			  <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
 			  <input id="email" name="email" placeholder="email address" class="form-control"  type="email">
@@ -48,6 +50,7 @@ if(isset($_POST) & !empty($_POST)){
 		  </div>
 		  <div class="form-group">
 			<input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Reset Password" type="submit">
+      
 		  </div>
 		  
 		  <input type="hidden" class="hide" name="token" id="token" value=""> 
