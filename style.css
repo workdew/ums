@@ -1,0 +1,11 @@
+html,body {
+    margin: 0px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+.box:hover {
+    
+}

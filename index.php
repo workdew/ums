@@ -1,7 +1,3 @@
-<?php
-    session_start();
-    if(!isset($_SESSION["name"])) {
-        header("Location: login.php");
-        exit();
-    }
-?>
+<?php require 'includes/connection.php'; ?>
+<?php require 'includes/functions.php'; ?>
+<?php validateLogin(); ?>
